@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Haniya Kulsum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="common_style.css">
+  <style>
+    /* Fade-in animation for the image only */
+    @keyframes fadeInImage {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .blog-header img {
+      animation: fadeInImage 1s ease-in-out;
+    }
+
+    /* Optional hover effect for the blog post */
+    .blog-post:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <section class="container-fluid d-flex align-items-center">
+    <a class="navbar-brand me-4" href="#">Haniya Kulsum</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="friends.html">Friends</a></li>
+      </ul>
+    </section>
+  </section>
+</nav>
+
+<main class="container mt-5">
+
+  <!-- Blog Header -->
+  <section class="p-4 mb-4 bg-light rounded-3 text-center blog-header">
+    <h1 class="display-5 fw-bold">Welcome to My Blog</h1>
+    <p class="fs-5">Sharing my thoughts, projects, and experiences in Data Science and AI/ML.</p>
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/blog-hero.jpeg">
+      <img src="images/blog-hero.jpeg" alt="AI and Machine Learning" class="img-fluid rounded shadow-lg mt-3" style="max-width: 600px;">
+    </picture>
+  </section>
+
+  <!-- First Blog Post -->
+  <section class="p-4 mb-4 bg-light rounded-3 blog-post">
+    <article>
+      <h2 class="fw-bold mb-2">My Journey into AI and Machine Learning</h2>
+      <p class="fs-6 text-muted">Posted on October 5, 2025</p>
+      <p class="fs-5">
+        During my studies in Computer Science, I developed a keen interest in Artificial Intelligence and Machine Learning. My projects include predicting early reviewers for e-commerce platforms and detecting ADHD in children using pose estimation. Through these experiences, I have learned the importance of combining technical skills with analytical thinking to deliver meaningful results.
+      </p>
+    </article>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="text-center mt-5 mb-3">
+  <small>© 2025 Haniya Kulsum — 
+    <a href="https://github.com/Haniya-kulsum/Haniya-kulsum.github.io" target="_blank" rel="noopener noreferrer">Source</a>
+  </small>
+</footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,158 @@
+/* ---------------- Navbar Styles ---------------- */
+.navbar-custom {
+  background: linear-gradient(90deg, #3b0a45, #1e3c72); /* deeper purple to navy blue */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  transition: color 0.3s ease;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #ffdd57 !important;
+}
+
+/* Navbar Links */
+.navbar-custom .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: color 0.25s ease, transform 0.18s ease;
+  padding: .4rem .6rem;
+}
+.navbar-custom .nav-link:hover {
+  color: #ffd700; /* gold */
+  transform: translateY(-2px);
+}
+.navbar-custom .nav-link.active {
+  color: #ff6b6b !important;
+  font-weight: 600;
+}
+
+/* Body & Typography */
+body {
+  background: linear-gradient(to bottom, #e6f0fa, #ffffff); /* soft blue to white */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+  transition: background 0.5s ease;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #1a1a1a !important;
+}
+
+/* Fade-in animation for sections */
+section {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating animation for main heading */
+h1.display-5 {
+  animation: floatHeading 4s ease-in-out infinite;
+}
+@keyframes floatHeading {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #1e3c72 !important; /* navy */
+  color: #ffffff !important;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #3b0a45 !important; /* deep purple */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Links */
+a {
+  color: #1e3c72 !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #ff6b6b !important;
+  text-decoration: underline;
+}
+
+/* List hover effect */
+.list-group-item {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.list-group-item:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 221, 87, 0.15); /* subtle highlight */
+}
+
+ /* aboutme page */ 
+
+figure img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+figure figcaption {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeInImage {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+figure img {
+  animation: fadeInImage 1s ease-in-out;
+}
+
+
+/* Ensures content stays visible after fade-in */
+.fade-section {
+  animation: fadeIn 1s ease-in-out forwards; /* <-- 'forwards' keeps final state */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Image fade-in */
+.picture-fade img {
+  animation: fadeInImage 1s ease-in-out forwards;
+}
+
+@keyframes fadeInImage {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Hover effect */
+.picture-fade img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
