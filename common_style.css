@@ -1,49 +1,69 @@
 /* ---------------- Navbar Styles ---------------- */
 .navbar-custom {
   background: linear-gradient(90deg, #3b0a45, #1e3c72); /* deeper purple to navy blue */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 6px rgba(187, 122, 181, 0.3);
   transition: background 0.3s ease;
 }
 
 .navbar-custom .navbar-brand {
-  color: #ffffff !important;
+  color: #ffffff;
   font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 2px rgba(195, 97, 141, 0.6);
   transition: color 0.3s ease;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
-  color: #ffdd57 !important;
+  color: #ffdd57 ;
 }
 
 /* Navbar Links */
 .navbar-custom .nav-link {
-  color: #ffffff !important;
+  color: #ffffff !important;   /* stays white on all non-active links */
   font-weight: 500;
   transition: color 0.25s ease, transform 0.18s ease;
   padding: .4rem .6rem;
 }
-.navbar-custom .nav-link:hover {
-  color: #ffd700; /* gold */
-  transform: translateY(-2px);
-}
+
+
 .navbar-custom .nav-link.active {
-  color: #ff6b6b !important;
+  color: #ff4d4d !important; /* or gold */
+  font-weight: 600;
+  border-bottom: 2px solid #ff4d4d;
+}
+
+
+.navbar-custom .nav-link:hover { 
+ color: #ffd700; 
+ transform: translateY(-2px); 
+} 
+.navbar-custom .nav-link.active {
+  color: s#e3d9e5 ;
   font-weight: 600;
 }
+
+/* ID selector example */
+#main-heading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #10110e;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+}
+
 
 /* Body & Typography */
 body {
   background: linear-gradient(to bottom, #e6f0fa, #ffffff); /* soft blue to white */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #1a1a1a;
+  color: #151212;
   line-height: 1.6;
   transition: background 0.5s ease;
 }
 
 /* Headings */
 h1, h2, h3, h4 {
-  color: #1a1a1a !important;
+  color: #0a0808;
 }
 
 /* Fade-in animation for sections */
@@ -71,25 +91,25 @@ h1.display-5 {
 
 /* Buttons */
 .btn-primary {
-  background-color: #1e3c72 !important; /* navy */
-  color: #ffffff !important;
+  background-color: #1e3c72 ; /* navy */
+  color: #aa9898 ;
   border: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-primary:hover {
-  background-color: #3b0a45 !important; /* deep purple */
+  background-color: #bb6c85; /* deep purple */
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(132, 57, 87, 0.3);
 }
 
 /* Links */
 a {
-  color: #1e3c72 !important;
+  color: #181213;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 a:hover {
-  color: #ff6b6b !important;
+  color: #6d1d1d;
   text-decoration: underline;
 }
 
@@ -99,7 +119,7 @@ a:hover {
 }
 .list-group-item:hover {
   transform: translateY(-3px);
-  background: rgba(255, 221, 87, 0.15); /* subtle highlight */
+  background: rgba(177, 197, 121, 0.15); /* subtle highlight */
 }
 
  /* aboutme page */ 
